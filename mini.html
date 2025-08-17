@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Special Tags Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f6f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: darkblue;
+    }
+    fieldset {
+      margin: 20px 0;
+      padding: 15px;
+      border: 2px solid darkblue;
+      border-radius: 10px;
+      background: #ffffff;
+    }
+    legend {
+      font-weight: bold;
+      color: darkred;
+    }
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: 2px solid #333;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      background: darkblue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: navy;
+    }
+  </style>
+</head>
+<body>
+  
+  <marquee behavior="scroll" direction="left" bgcolor="#add8e6">
+    🌟 Welcome to the My page 🌟
+  </marquee>
+
+  <h1>HTML Tags in Action</h1>
+
+  
+  <fieldset>
+    <legend>User Info</legend>
+    <label>Name: <input type="text"></label><br><br>
+    <label>Email: <input type="email"></label><br><br>
+    <progress value="60" max="100"></progress> Profile Completion (60%)
+  </fieldset>
+
+  
+  <h2>Embedded Content</h2>
+  <iframe src="https://www.wikipedia.org/" title="Wikipedia"></iframe>
+
+  
+  <h2>Interactive Dialog</h2>
+  <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+  <dialog id="myDialog">
+    <p>I am the member of the club "METIS"</p>
+    <button onclick="document.getElementById('myDialog').close()">Close</button>
+  </dialog>
+
+</body>
+</html>
